@@ -13,7 +13,7 @@ const PaymentSuccess = () => {
                 <p>Transaction ID: {transactionID}</p>
 
                 <div className="text-center">
-                    <Link to="../home" className="btn  w-64 font-bold rounded mt-10  text-white bg-purple-800 border hover:border-[#830FEA] border-[#830FEA]">Back to Home</Link></div><br />
+                    <Link to="/" className="btn  w-64 font-bold rounded mt-10  text-white bg-purple-800 border hover:border-[#830FEA] border-[#830FEA]">Back to Home</Link></div><br />
             </div>
         </>
     );

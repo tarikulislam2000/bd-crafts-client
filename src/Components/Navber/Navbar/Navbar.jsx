@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import {
-  FaEnvelopeOpenText,
+
   FaHouse,
   FaSistrix,
-  FaUserLarge,
+
 } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import LeftSideBar from "../../../Pages/Home/LeftSideBar/LeftSideBar";
@@ -17,7 +17,7 @@ const Navbar = () => {
   const [loading, setLoading] = useState(true);
   const { user, logOut } = useContext(AuthContext);
   const { handleSearchData } = useSearchContext();
-  const [openModal, setOpenModal] = useState(false);
+
   const [searchText, setSearchText] = useState("");
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -68,9 +68,7 @@ const Navbar = () => {
       <li className="font-bold text-xl">
         <div className="relative">
           <div className="">
-            <Link to="/msgApp">
-              <FaEnvelopeOpenText size={25} className="text-white" />
-            </Link>
+          
           </div>
         </div>
       </li>
